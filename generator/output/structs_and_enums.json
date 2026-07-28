@@ -276,11 +276,11 @@
   },
   "enumtypes": [],
   "locations": {
-    "COLOR": "ImGuizmo:306",
+    "COLOR": "ImGuizmo:311",
     "MODE": "ImGuizmo:217",
     "MOVETYPE": "ImGuizmo:264",
     "OPERATION": "ImGuizmo:188",
-    "Style": "ImGuizmo:326"
+    "Style": "ImGuizmo:331"
   },
   "nonPOD": {
     "ImBitArray": "inherited",
@@ -330,6 +330,7 @@
     "ImGuiOldColumnData": "inherited",
     "ImGuiOldColumns": "inherited",
     "ImGuiOnceUponAFrame": "inherited",
+    "ImGuiPackedDate": "inherited",
     "ImGuiPayload": "inherited",
     "ImGuiPlatformIO": "inherited",
     "ImGuiPlatformImeData": "inherited",

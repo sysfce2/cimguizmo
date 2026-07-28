@@ -40,6 +40,53 @@
       "stname": ""
     }
   ],
+  "ImGuizmo_ComputeMouseRay": [
+    {
+      "args": "(const float* view,const float* projection,const ImVec2_c mousePosition,const ImVec2_c rectPosition,const ImVec2_c rectSize,float* rayOrigin,float* rayDirection)",
+      "argsT": [
+        {
+          "name": "view",
+          "type": "const float*"
+        },
+        {
+          "name": "projection",
+          "type": "const float*"
+        },
+        {
+          "name": "mousePosition",
+          "type": "const ImVec2"
+        },
+        {
+          "name": "rectPosition",
+          "type": "const ImVec2"
+        },
+        {
+          "name": "rectSize",
+          "type": "const ImVec2"
+        },
+        {
+          "name": "rayOrigin",
+          "type": "float*"
+        },
+        {
+          "name": "rayDirection",
+          "type": "float*"
+        }
+      ],
+      "argsoriginal": "(const float* view,const float* projection,const ImVec2& mousePosition,const ImVec2& rectPosition,const ImVec2& rectSize,float* rayOrigin,float* rayDirection)",
+      "call_args": "(view,projection,ConvertToCPP_ImVec2(mousePosition),ConvertToCPP_ImVec2(rectPosition),ConvertToCPP_ImVec2(rectSize),rayOrigin,rayDirection)",
+      "call_args_old": "(view,projection,mousePosition,rectPosition,rectSize,rayOrigin,rayDirection)",
+      "cimguiname": "ImGuizmo_ComputeMouseRay",
+      "defaults": {},
+      "funcname": "ComputeMouseRay",
+      "location": "ImGuizmo:309",
+      "namespace": "ImGuizmo",
+      "ov_cimguiname": "ImGuizmo_ComputeMouseRay",
+      "ret": "void",
+      "signature": "(const float*,const float*,const ImVec2,const ImVec2,const ImVec2,float*,float*)",
+      "stname": ""
+    }
+  ],
   "ImGuizmo_DecomposeMatrixToComponents": [
     {
       "args": "(const float* matrix,float* translation,float* rotation,float* scale)",
@@ -452,7 +499,7 @@
       "cimguiname": "ImGuizmo_GetStyle",
       "defaults": {},
       "funcname": "GetStyle",
-      "location": "ImGuizmo:342",
+      "location": "ImGuizmo:347",
       "namespace": "ImGuizmo",
       "ov_cimguiname": "ImGuizmo_GetStyle",
       "ret": "Style*",
@@ -1155,7 +1202,7 @@
       "constructor": true,
       "defaults": {},
       "funcname": "Style",
-      "location": "ImGuizmo:328",
+      "location": "ImGuizmo:333",
       "namespace": "ImGuizmo::Style",
       "ov_cimguiname": "Style_Style",
       "signature": "()",
@@ -1175,7 +1222,7 @@
       "cimguiname": "Style_destroy",
       "defaults": {},
       "destructor": true,
-      "location": "ImGuizmo:328",
+      "location": "ImGuizmo:333",
       "ov_cimguiname": "Style_destroy",
       "ret": "void",
       "signature": "(Style*)",
